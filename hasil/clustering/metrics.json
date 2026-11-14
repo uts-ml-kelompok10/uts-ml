@@ -1,0 +1,85 @@
+{
+  "audit": {
+    "rows": 120000,
+    "columns": 60,
+    "missing_ids": 0,
+    "duplicated_ids": 0,
+    "missing_basket": 6736,
+    "no_orders": 6736,
+    "basket_missing_matches_no_orders": true,
+    "conversion_out_of_bounds": 656,
+    "spend_30_gt_90": 101,
+    "crm_actual": [
+      "n01",
+      "n02",
+      "n03",
+      "n04",
+      "n05",
+      "n06",
+      "n07",
+      "n08",
+      "n09",
+      "n10",
+      "n11",
+      "n12",
+      "n13",
+      "n14",
+      "n15"
+    ],
+    "spend_median": 1136500.0,
+    "spend_p99": 26695607.999999996,
+    "spend_max": 261836800.0,
+    "spearman_30_90_spend": 0.9715623992643867,
+    "spearman_30_90_count": 0.8681180258371983,
+    "composition": {
+      "kategori": {
+        "zeros_rows": 73187,
+        "max_sum_error": 0.0004999999999999449
+      },
+      "waktu": {
+        "zeros_rows": 146,
+        "max_sum_error": 0.00010000000000021103
+      }
+    }
+  },
+  "method": "KMeans",
+  "k": 3,
+  "seed": 42,
+  "final": {
+    "n_fit_final": 120000,
+    "features": 36,
+    "n_anomalies": 481,
+    "silhouette_final_before_anomaly": 0.16913630068302155,
+    "anomaly_sensitivity": [
+      {
+        "distance_percentile_per_cluster": 0.975,
+        "global_isolation_percentile": 0.975,
+        "n": 677,
+        "fraction": 0.005641666666666666
+      },
+      {
+        "distance_percentile_per_cluster": 0.985,
+        "global_isolation_percentile": 0.975,
+        "n": 481,
+        "fraction": 0.004008333333333333
+      },
+      {
+        "distance_percentile_per_cluster": 0.99,
+        "global_isolation_percentile": 0.975,
+        "n": 364,
+        "fraction": 0.003033333333333333
+      }
+    ]
+  },
+  "n_dev_fit": 9000,
+  "n_reference": 2600,
+  "input_sha256": "765f91f40c82646077ba11ec7e491efd9ac1b70d06dfa4419339b8f9493b9250",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  }
+}
