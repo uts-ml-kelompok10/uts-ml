@@ -1,0 +1,5 @@
+cluster,n,share,no_orders_share,median_recency_days,median_order_count,median_spend_90d,median_basket_if_active,median_voucher,median_flash_sale,median_paylater,median_cod,median_weekly_sessions,median_session_minutes,median_valid_conversion,top_category_and_mean_shares_active,top_times_and_mean_shares_active,top_device,top_city_tier
+-1,481,0.004008333333333333,0.0,12.9,9.0,2039900.0,259100.0,0.357,0.282,0.162,0.264,231.72,0.75,0.007,makanan_minuman 0.1400; fashion 0.1037; rumah_tangga 0.0847,siang 0.2586; pagi 0.2536,ios,3
+0,39679,0.33065833333333333,0.0,6.5,13.0,4576200.0,367900.0,0.282,0.203,0.109,0.156,5.37,8.03,0.19,makanan_minuman 0.1789; fashion 0.1054; rumah_tangga 0.1032,pagi 0.2969; siang 0.2650,android,1
+1,53357,0.44464166666666666,0.014730963135108795,8.6,7.0,796100.0,120600.0,0.722,0.574,0.217,0.278,7.23,7.84,0.072,fashion 0.1770; makanan_minuman 0.1316; kecantikan 0.1093,malam 0.3489; pagi 0.2354,android,1
+2,26483,0.22069166666666667,0.22467243137106824,48.9,2.0,273300.0,185100.0,0.438,0.317,0.167,0.433,2.28,8.05,0.049,makanan_minuman 0.1371; fashion 0.1242; rumah_tangga 0.0913,malam 0.2555; siang 0.2484,android,1
