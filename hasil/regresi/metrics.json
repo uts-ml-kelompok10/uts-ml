@@ -1,0 +1,334 @@
+{
+  "audit": {
+    "train": {
+      "n": 250000,
+      "from": "2025-01-01 00:00:00",
+      "to": "2025-08-31 23:00:00",
+      "missing_weight": 13897,
+      "nonpositive_distance": 703,
+      "scan_median": 8.0
+    },
+    "test": {
+      "n": 60000,
+      "from": "2025-09-01 00:00:00",
+      "to": "2025-10-31 23:00:00",
+      "missing_weight": 3265,
+      "nonpositive_distance": 177,
+      "scan_median": 1.0
+    },
+    "unseen_categories": {
+      "layanan": {
+        "train_levels": 4,
+        "new_levels": [],
+        "test_rows": 0
+      },
+      "mitra_kurir": {
+        "train_levels": 12,
+        "new_levels": [
+          "K13"
+        ],
+        "test_rows": 2342
+      },
+      "hub_asal": {
+        "train_levels": 6,
+        "new_levels": [],
+        "test_rows": 0
+      },
+      "kota_asal": {
+        "train_levels": 30,
+        "new_levels": [],
+        "test_rows": 0
+      },
+      "pulau_tujuan": {
+        "train_levels": 7,
+        "new_levels": [],
+        "test_rows": 0
+      },
+      "kota_tujuan": {
+        "train_levels": 405,
+        "new_levels": [],
+        "test_rows": 0
+      }
+    },
+    "scan_spearman": 0.7689557336777888,
+    "labels_after_august": 2804,
+    "target_p99_hours": 224.70100000000093,
+    "target_max_hours": 25452.0
+  },
+  "seed": 42,
+  "python": "3.12.14",
+  "versions": {
+    "lightgbm": "4.6.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "features": [
+    "layanan",
+    "mitra_kurir",
+    "hub_asal",
+    "kota_asal",
+    "pulau_tujuan",
+    "kota_tujuan",
+    "jarak_km",
+    "berat_kg",
+    "volume_liter",
+    "jumlah_item",
+    "nilai_barang",
+    "asuransi",
+    "cod",
+    "alamat_skor",
+    "pengalaman_kurir_bulan",
+    "rating_penjual",
+    "umur_akun_penjual_hari",
+    "volume_penjual_30h",
+    "antrean_hub_asal",
+    "indeks_kemacetan",
+    "hujan_asal_mm",
+    "hujan_tujuan_mm",
+    "f01",
+    "f02",
+    "f03",
+    "f04",
+    "f05",
+    "f06",
+    "f07",
+    "f08",
+    "f09",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f18",
+    "f19",
+    "f20",
+    "f21",
+    "f22",
+    "f23",
+    "f24",
+    "f25",
+    "f26",
+    "f27",
+    "f28",
+    "f29",
+    "f30",
+    "f31",
+    "f32",
+    "f33",
+    "f34",
+    "f35",
+    "f36",
+    "f37",
+    "f38",
+    "f39",
+    "f40",
+    "f41",
+    "f42",
+    "f43",
+    "f44",
+    "f45",
+    "f46",
+    "f47",
+    "f48",
+    "f49",
+    "f50",
+    "jarak_tidak_positif",
+    "berat_kosong",
+    "jam_sin",
+    "jam_cos",
+    "pekan_sin",
+    "pekan_cos"
+  ],
+  "input_sha256": {
+    "train": "63b6b0ff38c321bbf9ea44ae5610c4b8aa5a40d411e97703b9ce65afb08d916b",
+    "test": "434dbab6b1ef76cfdc99d0b9aa3503c4beedb2a9982702be57300d00b7ea02be"
+  },
+  "chosen_model": "lightgbm num_leaves=31 n_estimators=160",
+  "tuning_average": [
+    {
+      "pinball_p50": 12.760355243189643,
+      "pinball_p90": 8.608508734624838,
+      "model": "baseline"
+    },
+    {
+      "pinball_p50": 6.95155092958081,
+      "pinball_p90": 4.3388899976043165,
+      "model": "ridge_log alpha=1.0"
+    },
+    {
+      "pinball_p50": 6.960861909975062,
+      "pinball_p90": 4.345919418434982,
+      "model": "ridge_log alpha=25.0"
+    },
+    {
+      "pinball_p50": 6.569973850857625,
+      "pinball_p90": 4.138079188111252,
+      "model": "lightgbm num_leaves=31 n_estimators=160"
+    },
+    {
+      "pinball_p50": 6.6188170310882555,
+      "pinball_p90": 4.1359108480628715,
+      "model": "lightgbm num_leaves=63 n_estimators=240"
+    }
+  ],
+  "time_validation": [
+    {
+      "candidate": 3,
+      "model": "lightgbm num_leaves=31 n_estimators=160",
+      "bulan": "2025-05",
+      "n_fit": 113592,
+      "n": 32793,
+      "pinball_p50": 6.745096211366581,
+      "pinball_p90": 4.344391813352159,
+      "coverage_p90": 0.9033330283902052,
+      "mae_p50": 13.490192422733163,
+      "bias_p50": -3.4410980580407466
+    },
+    {
+      "candidate": 3,
+      "model": "lightgbm num_leaves=31 n_estimators=160",
+      "bulan": "2025-06",
+      "n_fit": 146549,
+      "n": 29260,
+      "pinball_p50": 6.394851490348669,
+      "pinball_p90": 3.931766562870345,
+      "coverage_p90": 0.9267600820232399,
+      "mae_p50": 12.789702980697339,
+      "bias_p50": -0.15683214032060577
+    }
+  ],
+  "random_validation": [
+    {
+      "paired_month": "2025-05",
+      "n_fit": 113592,
+      "n": 32793,
+      "pinball_p50": 7.114127470042727,
+      "pinball_p90": 4.9016713203242945,
+      "coverage_p90": 0.8880858719848749,
+      "mae_p50": 14.228254940085455,
+      "bias_p50": -4.373159226970605
+    },
+    {
+      "paired_month": "2025-06",
+      "n_fit": 146549,
+      "n": 29260,
+      "pinball_p50": 7.167517427304093,
+      "pinball_p90": 5.035257393709857,
+      "coverage_p90": 0.8875256322624744,
+      "mae_p50": 14.335034854608185,
+      "bias_p50": -4.757171991402844
+    }
+  ],
+  "august": {
+    "n_fit": 178548,
+    "n_cal": 22519,
+    "labels_not_ready_in_cal": 39,
+    "offset_hours": 4.615905358593494,
+    "calibration_raw": {
+      "n": 22519,
+      "pinball_p50": 7.282426638089964,
+      "pinball_p90": 4.643050990397715,
+      "coverage_p90": 0.8667347573160442,
+      "mae_p50": 14.564853276179928,
+      "bias_p50": -5.574213831044985
+    },
+    "raw": {
+      "n": 34168,
+      "pinball_p50": 10.828503468727105,
+      "pinball_p90": 11.416134526561887,
+      "coverage_p90": 0.8824045890892063,
+      "mae_p50": 21.65700693745421,
+      "bias_p50": -12.420793053702079
+    },
+    "calibrated": {
+      "n": 34168,
+      "pinball_p50": 10.828503468727105,
+      "pinball_p90": 11.405453946893338,
+      "coverage_p90": 0.9115254038866776,
+      "mae_p50": 21.65700693745421,
+      "bias_p50": -12.420793053702079
+    },
+    "crossings_before_repair": 1,
+    "baseline": {
+      "n": 34168,
+      "pinball_p50": 17.156084640599392,
+      "pinball_p90": 15.969046476235073,
+      "coverage_p90": 0.8941114493092952,
+      "mae_p50": 34.312169281198784,
+      "bias_p50": -18.225439007258252
+    },
+    "outcomes_after_september_cutoff": 2600,
+    "by_half": [
+      {
+        "start": "2025-08-01",
+        "end_exclusive": "2025-08-16",
+        "n": 17657,
+        "pinball_p50": 11.004366489129824,
+        "pinball_p90": 11.515563805236978,
+        "coverage_p90": 0.9102339015687829,
+        "mae_p50": 22.008732978259648,
+        "bias_p50": -12.810343224887886
+      },
+      {
+        "start": "2025-08-16",
+        "end_exclusive": "2025-09-01",
+        "n": 16511,
+        "pinball_p50": 10.640434099745768,
+        "pinball_p90": 11.287701553411802,
+        "coverage_p90": 0.9129065471503846,
+        "mae_p50": 21.280868199491536,
+        "bias_p50": -12.004204877781312
+      }
+    ]
+  },
+  "scan_ablation": {
+    "model": "lightgbm num_leaves=31 n_estimators=160",
+    "without_scan": {
+      "n": 34168,
+      "pinball_p50": 10.828503468727105,
+      "pinball_p90": 11.416134526561887,
+      "coverage_p90": 0.8824045890892063,
+      "mae_p50": 21.65700693745421,
+      "bias_p50": -12.420793053702079
+    },
+    "with_recorded_scan": {
+      "n": 34168,
+      "pinball_p50": 9.39639969763709,
+      "pinball_p90": 9.946128709806949,
+      "coverage_p90": 0.883546007960665,
+      "mae_p50": 18.79279939527418,
+      "bias_p50": -10.157432709299579
+    },
+    "with_scan_fixed_at_test_median": {
+      "n": 34168,
+      "pinball_p50": 14.947964385347003,
+      "pinball_p90": 20.836358683009642,
+      "coverage_p90": 0.45384570358229925,
+      "mae_p50": 29.895928770694006,
+      "bias_p50": -28.466009243124518
+    },
+    "fixed_value": 1
+  },
+  "final": {
+    "n_fit": 212489,
+    "n_cal": 22719,
+    "labels_not_ready_in_cal": 43,
+    "offset_hours": -0.3892753216809979,
+    "n_test": 60000,
+    "calibration_raw": {
+      "n": 22719,
+      "pinball_p50": 6.660747071977369,
+      "pinball_p90": 4.196633730365749,
+      "coverage_p90": 0.9021083674457503,
+      "mae_p50": 13.321494143954737,
+      "bias_p50": -3.526680745151544
+    },
+    "crossings_before_repair": 11
+  }
+}
