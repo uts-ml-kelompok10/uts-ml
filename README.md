@@ -11,7 +11,7 @@ Regresi durasi pengiriman, klasifikasi fraud, dan segmentasi pelanggan dari data
 
 | Berkas | Isi |
 | --- | --- |
-| [laporan.pdf](laporan.pdf) | Pembahasan semua subsoal Tugas 1-3 dalam 16 halaman. |
+| [laporan.pdf](laporan.pdf) | Pembahasan semua subsoal Tugas 1-3 dalam 17 halaman. |
 | [kode/](kode/README.md) | Implementasi Python, tiga notebook demo, dependensi, dan cara menjalankan. |
 | [prediksi_regresi.csv](prediksi_regresi.csv) | 60.000 prediksi, kolom `id_paket,p50,p90`. |
 | [prediksi_klasifikasi.csv](prediksi_klasifikasi.csv) | 106.674 prediksi, kolom `id_transaksi,prob,tandai`. |
@@ -46,4 +46,4 @@ Pada 20 November 2026, ketiga notebook dijalankan dari sel pertama sampai terakh
 
 ## Tata tulis laporan
 
-Laporan memakai sampul, daftar isi, lima bab, daftar pustaka, serta penomoran tabel dan gambar per bab. Acuan tata tulis adalah [template resmi tugas akhir FTE Telkom University](https://see.telkomuniversity.ac.id/wp-content/uploads/2022/01/Format-Buku-Tugas-Akhir.docx): kertas A4, Times New Roman 12 untuk isi, spasi 1,5, rata kiri-kanan, margin kiri 4 cm dan sisi lain 3 cm. Ukuran teks tabel dan keterangan gambar disesuaikan agar terbaca. Template tersebut menjadi acuan format; ketentuan tugas UTS tetap mengatur isi dan batas maksimal 18 halaman. Versi ini berjumlah 16 halaman termasuk sampul dan daftar isi.
+Laporan memakai sampul, daftar isi, lima bab, daftar pustaka, serta penomoran tabel dan gambar per bab. Acuan tata tulis adalah [template resmi tugas akhir FTE Telkom University](https://see.telkomuniversity.ac.id/wp-content/uploads/2022/01/Format-Buku-Tugas-Akhir.docx): kertas A4, Times New Roman 12 untuk isi, spasi 1,5, rata kiri-kanan, margin kiri 4 cm dan sisi lain 3 cm. Ukuran teks tabel dan keterangan gambar disesuaikan agar terbaca. Template tersebut menjadi acuan format; ketentuan tugas UTS tetap mengatur isi dan batas maksimal 18 halaman. Versi ini berjumlah 17 halaman termasuk sampul dan daftar isi.

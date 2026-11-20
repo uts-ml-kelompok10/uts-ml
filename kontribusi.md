@@ -27,7 +27,7 @@ Pemeriksaan teknis dalam sesi kerja tanggal 19 November 2026 mencakup hal beriku
 
 Angka validasi Agustus dibedakan dari prediksi September-Oktober. Jeda kematangan label fraud 14 hari dicatat sebagai asumsi. Skor pada label uji dan segmen referensi dosen yang tersembunyi belum tersedia.
 
-Pada 20 November 2026, format laporan disesuaikan dengan acuan tata tulis FTE Telkom University, mencakup sampul, daftar isi, bab, tipografi, margin, dan penomoran tabel/gambar. PDF tetap 16 halaman termasuk sampul dan daftar isi; seluruh halaman dirender dan diperiksa. Tiga notebook demo dijalankan dari awal hingga akhir dengan kernel Python lokal. Seluruh 17 JSON/CSV hasilnya cocok dengan keluaran repo setelah normalisasi akhir baris Git. Implementasi eksperimen pada skrip `.py` tetap dipakai oleh notebook.
+Pada 20 November 2026, format laporan disesuaikan dengan acuan tata tulis FTE Telkom University, mencakup sampul, daftar isi, bab, tipografi, margin, dan penomoran tabel/gambar. Audit bahasa dengan skill humanizer mencakup seluruh 16 subbab dan daftar pustaka. Istilah diperjelas dan kalimat dirapikan dengan mempertahankan angka, konfigurasi, rujukan, dan batas kesimpulan. Keterangan kelas dihapus dari sampul dan jenjang ditulis S-1. PDF akhir berjumlah 17 halaman termasuk sampul dan daftar isi; seluruh halaman dirender dan diperiksa. Tiga notebook demo telah dijalankan dari awal hingga akhir dengan kernel Python lokal. Seluruh 17 JSON/CSV hasilnya cocok dengan keluaran repo setelah normalisasi akhir baris Git. Implementasi eksperimen pada skrip `.py` tetap dipakai oleh notebook.
 
 ## Persetujuan anggota
 
