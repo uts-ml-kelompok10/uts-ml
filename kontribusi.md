@@ -11,7 +11,7 @@ PR #1 dan #2 telah digabung ke `main` melalui akun masing-masing anggota. Tabel 
 
 ## Penggunaan AI
 
-OpenAI Codex/ChatGPT membantu menyusun dan memeriksa implementasi Python, audit ketersediaan fitur, validasi waktu, percobaan model, kalibrasi, aturan biaya, analisis clustering, pembahasan hasil, penyusunan PDF, serta pemeriksaan struktur pengumpulan. AI juga membantu latihan penjelasan untuk ujian lisan.
+OpenAI Codex/ChatGPT membantu menyusun dan memeriksa implementasi Python, audit ketersediaan fitur, validasi waktu, percobaan model, kalibrasi, aturan biaya, analisis clustering, pembahasan hasil, penyusunan PDF, notebook presentasi, serta pemeriksaan struktur pengumpulan. AI juga membantu latihan penjelasan untuk ujian lisan.
 
 Hasil numerik laporan menggunakan keluaran kode pada data dosen. Repo publik UTS tahun sebelumnya ditinjau untuk melihat susunan penyajian dan jenis pembahasan. Dataset, angka hasil, dan konfigurasi eksperimennya berbeda dari tugas ini. Rujukan metode dalam laporan mengarah ke dokumentasi pustaka yang digunakan.
 
@@ -26,6 +26,8 @@ Pemeriksaan teknis dalam sesi kerja tanggal 19 November 2026 mencakup hal beriku
 - Merender dan memeriksa seluruh halaman PDF agar tabel, grafik, nomor halaman, dan teks terbaca.
 
 Angka validasi Agustus dibedakan dari prediksi September-Oktober. Jeda kematangan label fraud 14 hari dicatat sebagai asumsi. Skor pada label uji dan segmen referensi dosen yang tersembunyi belum tersedia.
+
+Pada 20 November 2026, format laporan disesuaikan dengan acuan tata tulis FTE Telkom University, mencakup sampul, daftar isi, bab, tipografi, margin, dan penomoran tabel/gambar. PDF tetap 16 halaman termasuk sampul dan daftar isi; seluruh halaman dirender dan diperiksa. Tiga notebook demo dijalankan dari awal hingga akhir dengan kernel Python lokal. Seluruh 17 JSON/CSV hasilnya cocok dengan keluaran repo setelah normalisasi akhir baris Git. Implementasi eksperimen pada skrip `.py` tetap dipakai oleh notebook.
 
 ## Persetujuan anggota
 
