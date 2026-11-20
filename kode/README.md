@@ -1,5 +1,35 @@
 # UTS Pembelajaran Mesin: reproduksi tiga tugas
 
+## Demo ujian lisan dengan notebook
+
+| Tugas | Notebook | Fokus penjelasan |
+| --- | --- | --- |
+| 1 | [01_regresi.ipynb](01_regresi.ipynb) | P50/P90, validasi waktu, dan perubahan cakupan sesudah kalibrasi. |
+| 2 | [02_klasifikasi.ipynb](02_klasifikasi.ipynb) | Peluang fraud, keputusan review, dan perhitungan biaya. |
+| 3 | [03_clustering.ipynb](03_clustering.ipynb) | Alasan tiga cluster, profil pelanggan, stabilitas, dan anomali. |
+
+Notebook juga menjalankan Python. Penyajiannya menggabungkan penjelasan, sel kode, tabel, dan grafik. Implementasi model tetap berada di skrip `.py` per tugas; sel eksperimen memanggil skrip tersebut agar perhitungan demo dan pengumpulan tetap sama.
+
+Gunakan Python 3.12 dan letakkan lima berkas data dosen di `data_uts_ml/`. Dari root repo:
+
+```powershell
+python -m pip install -r kode/requirements-notebook.txt
+python -m jupyterlab
+```
+
+Buka salah satu notebook dari folder `kode/` dan pilih kernel Python tempat dependensi dipasang. Gunakan **Restart Kernel and Run All Cells** untuk mengulang dari awal. Jika folder data berbeda, set variabel lingkungan `UTS_DATA_DIR` ke lokasi data sebelum menjalankan JupyterLab. Hasil run baru disimpan di `.cache/demo-notebook/<tugas>/`; tabel dan grafik setelah sel eksperimen membaca hasil run tersebut.
+
+Ketiga notebook telah dijalankan penuh pada 20 November 2026. Di mesin pemeriksaan, sel eksperimen regresi memerlukan sekitar 3,5 menit, klasifikasi 50 detik, dan clustering 20 detik. Waktu bergantung mesin. Output tersimpan dapat dibaca di GitHub sebelum menjalankan ulang. Pengujian dilakukan dengan kernel lokal; penggunaan Colab memerlukan repo lengkap, dependensi, dan data, serta belum diuji dalam pemeriksaan ini.
+
+Untuk demo lima menit, siapkan lingkungan dan jalankan ulang sebelum ujian. Saat presentasi, ikuti urutan berikut, serta siap menjalankan sel yang diminta penguji.
+
+1. Jelaskan satu baris data mewakili apa dan keputusan yang ingin dibantu.
+2. Tunjukkan metode serta asumsi penting: waktu fitur, jeda label 14 hari, atau praproses clustering sesuai tugas.
+3. Tunjukkan sel eksperimen dan hasil yang dihasilkan, lalu bacakan satu tabel atau grafik utama.
+4. Jelaskan batas hasil: cakupan berlaku pada cohort evaluasi; biaya resmi menunggu label; ARI clustering mengukur kestabilan internal dan manfaat kampanye masih perlu diuji.
+
+Untuk pertanyaan detail implementasi, buka skrip `.py` yang bersangkutan. Pembahasan seluruh subsoal ada di [laporan](../laporan.pdf).
+
 ## Tugas 1 — Regresi
 
 Tugas 1 memperkirakan durasi pengiriman sejak paket dijemput hingga diterima. P50 adalah estimasi median durasi; P90 adalah batas atas yang ditargetkan mencakup sekitar 90% durasi. Kedua angka dalam jam.

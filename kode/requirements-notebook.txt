@@ -1,0 +1,4 @@
+-r requirements-regresi.txt
+matplotlib==3.11.2
+ipykernel==7.4.0
+jupyterlab>=4,<5
